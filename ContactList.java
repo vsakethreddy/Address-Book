@@ -1,4 +1,4 @@
-import javax.swing.*;
+import javax.swing.*; //Header files
 import java.io.*;
 import java.util.*;
 import java.awt.*;
@@ -8,9 +8,9 @@ class PersonInfo {
     String address;
     String phoneNumber;
     PersonInfo(String name, String address, String phoneNumber) {
-        this.name = name;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
+        this.name = name; //name assigning
+        this.address = address; //address assigning
+        this.phoneNumber = phoneNumber; //phone number assigning
     }
     void display() {
         JOptionPane.showMessageDialog(null, "Name: " + name + "\nAddress: " + address + "\nPhone no: " + phoneNumber);
@@ -106,7 +106,7 @@ class ContactBook {
         }
         else if(x==1)
         {
-        	show("Contact  not found");
+        	show("Contact not found");
         }
         savePersons();
     }
@@ -226,7 +226,7 @@ class frame3 extends JFrame
     
     boolean IsSubstring(String s1, String s2)
     {
-        int M = s1.length();
+        int M = s1.length(); //to find length of string
         int N = s2.length();
         for (int i = 0; i <= N - M; i++) 
         {
